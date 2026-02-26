@@ -8,7 +8,7 @@ AWS Services like S3, Lambda and Cloudwatch logs are a perfect example to notify
 
 Steps: User will upload the “.sql” format in the folder Lambda function triggers as soon as a file has been uploaded. For granting permissions, IAM role has been created and set it as lambda’s execution role The source and destination of the file has been declared in environment tags for security Existing Dependencies / customized dependencies can be added to lambda function using a .zip file As soon as a new file is uploaded on a daily/weekly basis, the lambda will trigger the python script to generate the file in the desired format User can monitor/view logs via Cloudwatch Unit test cases have been added for better testing of the functionality
 
-Test Requirements: If there are multiple dates in a single file If no revenue is generated Keywords such as “IPOD” , “iPod” , “ipod” are considered as a matching keyword. Observations: With the help of Pandas and Matplot lib functions, the best keyword generated based on Revenue appears to be ‘Ipod’
+Test Requirements: If there are multiple dates in a single file If no revenue is generated Keywords such as “IPOD” , “iPod” , “ipod” are considered as different keywords, but if business requires, they can be considered as one by using inbuilt lower() function. Observations: With the help of Pandas and Matplot lib functions, the best keyword generated based on Revenue appears to be ‘Ipod’
 
 Sources: Github AWS S3 AWS Lambda AWS IAM Role Unittest
 
