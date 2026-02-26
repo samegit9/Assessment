@@ -10,6 +10,15 @@ Steps: User will upload the “.sql” format in the folder Lambda function trig
 
 Test Requirements: If there are multiple dates in a single file If no revenue is generated Keywords such as “IPOD” , “iPod” , “ipod” are considered as different keywords, but if business requires, they can be considered as one by using inbuilt lower() function. Observations: With the help of Pandas and Matplot lib functions, the best keyword generated based on Revenue appears to be ‘Ipod’
 
+
+Please follow the below Steps:
+1. Install VSCode/ Google Colab(Gmail ID required)
+2. Create AWS free tier account
+3. Create IAM role and attach the required polices. Eg. lambda-s3-execution-role
+4. Create S3 bucket and update permissions
+5. Create Lambda, Trigger, and test cases. Attach given S3 bucket. Add layers to install desired libraries
+6. Lambda >> Trigger >> S3 >> Deploy >> Test >> Cloudwatch
+
 Sources: Github AWS S3 AWS Lambda AWS IAM Role Unittest
 
 Google Doc link: https://docs.google.com/document/d/1wKN_-xQ1Y-sQe8_Nb7mlT6QuXbT6TrUorVTM0pMBAvU/edit?usp=sharing
